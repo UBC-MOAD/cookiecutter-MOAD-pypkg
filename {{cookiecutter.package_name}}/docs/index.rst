@@ -1,4 +1,4 @@
-.. Copyright {{ cookiecutter.project_creation_year }}, {{ cookiecutter.full_name }}
+.. Copyright {{ cookiecutter.project_creation_year }}, {{ cookiecutter.copyright_holder }}
 ..
 .. Licensed under the Apache License, Version 2.0 (the "License");
 .. you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ License
     :alt: Licensed under the Apache License, Version 2.0
 
 The code and documentation of the {{ cookiecutter.project_name }} project
-are copyright {{ cookiecutter.project_creation_year }} by {{ cookiecutter.full_name }}.
+are copyright {{ cookiecutter.project_creation_year }} by {{ cookiecutter.copyright_holder }}.
 
 They are licensed under the Apache License, Version 2.0.
 https://www.apache.org/licenses/LICENSE-2.0

@@ -1,4 +1,4 @@
-.. Copyright {{ cookiecutter.project_creation_year }}, {{ cookiecutter.full_name }}
+.. Copyright {{ cookiecutter.project_creation_year }}, {{ cookiecutter.copyright_holder }}
 ..
 .. Licensed under the Apache License, Version 2.0 (the "License");
 .. you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@
     :target: https://docs.python.org/{{ cookiecutter.dev_python_version }}/
     :alt: Python Version
 .. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
     :alt: Mercurial on Bitbucket
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://black.readthedocs.io/en/stable/
@@ -35,8 +35,8 @@
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name.lower() }}/badge/?version=latest
     :target: https://{{ cookiecutter.package_name.lower() }}.readthedocs.io/en/latest/
     :alt: Documentation Status
-.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
+.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}.svg
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
     :alt: Issue Tracker
 
 The {{ cookiecutter.package_name }} package (:kbd:`{{ cookiecutter.package_slug }}`) is {{ cookiecutter.project_short_description }}
@@ -70,22 +70,22 @@ Getting the Code
 ================
 
 .. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
     :alt: Mercurial on Bitbucket
 
 Clone the code and documentation `repository`_ from Bitbucket with:
 
-.. _repository: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/
+.. _repository: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
 
 .. code-block:: bash
 
-    $ hg clone ssh://hg@bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
+    $ hg clone ssh://hg@bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
 
 or
 
 .. code-block:: bash
 
-    $ hg clone https://your_userid@bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
+    $ hg clone https://your_userid@bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
 
 if you don't have `ssh key authentication`_ set up on Bitbucket
 (replace :kbd:`you_userid` with you Bitbucket userid,
@@ -264,10 +264,10 @@ Version Control Repository
 ==========================
 
 .. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
     :alt: Mercurial on Bitbucket
 
-The :kbd:`{{ cookiecutter.package_name }}` package code and documentation source files are available as a `Mercurial`_ repository at https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/.
+The :kbd:`{{ cookiecutter.package_name }}` package code and documentation source files are available as a `Mercurial`_ repository at https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/.
 
 .. _Mercurial: https://www.mercurial-scm.org/
 
@@ -277,13 +277,13 @@ The :kbd:`{{ cookiecutter.package_name }}` package code and documentation source
 Issue Tracker
 =============
 
-.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
+.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}.svg
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
     :alt: Issue Tracker
 
 Development tasks,
 bug reports,
-and enhancement ideas are recorded and managed in the issue tracker at https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/issues.
+and enhancement ideas are recorded and managed in the issue tracker at https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues.
 
 
 License
@@ -294,7 +294,7 @@ License
     :alt: Licensed under the Apache License, Version 2.0
 
 The code and documentation of the {{ cookiecutter.project_name }} project
-are copyright {{ cookiecutter.project_creation_year }} by {{ cookiecutter.full_name }}.
+are copyright {{ cookiecutter.project_creation_year }} by {{ cookiecutter.copyright_holder }}.
 
 They are licensed under the Apache License, Version 2.0.
 https://www.apache.org/licenses/LICENSE-2.0

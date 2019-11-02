@@ -9,7 +9,7 @@
     :target: https://docs.python.org/{{ cookiecutter.dev_python_version }}/
     :alt: Python Version
 .. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
     :alt: Mercurial on Bitbucket
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://black.readthedocs.io/en/stable/
@@ -17,8 +17,8 @@
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name.lower() }}/badge/?version=latest
     :target: https://{{ cookiecutter.package_name.lower() }}.readthedocs.io/en/latest/
     :alt: Documentation Status
-.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
+.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}.svg
+    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
     :alt: Issue Tracker
 
 {{ cookiecutter.project_short_description }}
@@ -32,7 +32,7 @@ License
     :alt: Licensed under the Apache License, Version 2.0
 
 The code and documentation of the {{ cookiecutter.project_name }} project
-are copyright {{ cookiecutter.project_creation_year }} by {{ cookiecutter.full_name }}.
+are copyright {{ cookiecutter.project_creation_year }} by {{ cookiecutter.copyright_holder }}.
 
 They are licensed under the Apache License, Version 2.0.
 https://www.apache.org/licenses/LICENSE-2.0

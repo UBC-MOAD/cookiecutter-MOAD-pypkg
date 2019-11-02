@@ -1,9 +1,9 @@
 # conda environment description file for the cookiecutter environment that is
-# required to create packages using the cookiecutter-djl-pypkg cookie cutter
+# required to create packages using the cookiecutter-moad-pypkg cookie cutter
 #
 # Create a conda environment in which to run cookiecutter with:
 #
-#   $ conda env create -f cookiecutter-djl-pypkg/env/environment.yaml
+#   $ conda env create -f cookiecutter-moad-pypkg/env/environment.yaml
 #   $ conda activate cookiecutter
 #
 # See the env/requirements.txt file for an exhaustive list of all of the

@@ -1,4 +1,4 @@
-# Copyright {{ cookiecutter.project_creation_year }}, {{ cookiecutter.full_name }}
+# Copyright {{ cookiecutter.project_creation_year }}, {{ cookiecutter.copyright_holder }}
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
