@@ -88,7 +88,7 @@ or
     $ hg clone https://your_userid@bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
 
 if you don't have `ssh key authentication`_ set up on Bitbucket
-(replace :kbd:`you_userid` with you Bitbucket userid,
+(replace :kbd:`you_userid` with your Bitbucket userid,
 or copy the link from the :guilabel:`Clone` action pop-up on the `repository`_ page).
 
 .. _ssh key authentication: https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html
@@ -105,9 +105,9 @@ you can create and activate an environment called :kbd:`{{ cookiecutter.package_
 testing,
 and building the documentation with the commands below.
 
-.. _Conda: https://conda.io/docs/
-.. _Anaconda Python Distribution: https://www.anaconda.com/download/
-.. _Miniconda3: https://conda.io/docs/install/quick.html
+.. _Conda: https://conda.io/en/latest/
+.. _Anaconda Python Distribution: https://www.anaconda.com/distribution/
+.. _Miniconda3: https://docs.conda.io/en/latest/miniconda.html
 
 .. code-block:: bash
 
