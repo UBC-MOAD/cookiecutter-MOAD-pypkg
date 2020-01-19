@@ -3,10 +3,10 @@
 #
 # Create a conda environment in which to run cookiecutter with:
 #
-#   $ conda env create -f cookiecutter-moad-pypkg/env/environment.yaml
+#   $ conda env create -f cookiecutter-moad-pypkg/envs/environment.yaml
 #   $ conda activate cookiecutter
 #
-# See the env/requirements.txt file for an exhaustive list of all of the
+# See the envs/requirements.txt file for an exhaustive list of all of the
 # packages installed in the environment and their versions used in
 # recent development.
 

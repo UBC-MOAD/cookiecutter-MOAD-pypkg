@@ -7,7 +7,7 @@ python:
   version: {{ cookiecutter.dev_python_version }}
 
 conda:
-  environment: env/environment-rtd.yaml
+  environment: envs/environment-rtd.yaml
 
 build:
   image: latest

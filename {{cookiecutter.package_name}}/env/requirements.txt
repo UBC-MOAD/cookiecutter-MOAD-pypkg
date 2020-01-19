@@ -1,5 +1,0 @@
-# Python packages and versions used in development environment
-#
-# Create/update this file with:
-#   ({{ cookiecutter.conda_dev_env_name }})$ python3 -m pip freeze --path $CONDA_PREFIX/lib/python3*/site-packages >> env/requirements.txt
-
