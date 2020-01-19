@@ -1,5 +1,5 @@
 ***********************
-cookiecutter-moad-pypkg
+cookiecutter-MOAD-pypkg
 ***********************
 
 .. image:: https://img.shields.io/badge/license-Apache%202-cb2533.svg
@@ -18,18 +18,18 @@ To create a new package skeleton:
 
    or create it, then activate it::
 
-     $ conda env create -f cookiecutter-moad-pypkg/env/environment.yaml
+     $ conda env create -f cookiecutter-MOAD-pypkg/envs/environment.yaml
      $ conda activate cookiecutter
 
 2. Run this cookie cutter, and answer the prompts, either from a local copy::
 
-     (cookiecutter)$ cookiecutter cookiecutter-moad-pypkg/
+     (cookiecutter)$ cookiecutter cookiecutter-MOAD-pypkg/
 
-   or from `its repository`_ on Bitbucket::
+   or from `its repository`_ on GitHub::
 
-     (cookiecutter)$ cookiecutter git+ssh://git@bitbucket.org:douglatornell/cookiecutter-moad-pypkg.git
+     (cookiecutter)$ cookiecutter gh:UBC-MOAD/cookiecutter-MOAD-pypkg
 
-   .. _its repository: https://bitbucket.org/douglatornell/cookiecutter-moad-pypkg/
+   .. _its repository: https://github.com/UBC-MOAD/cookiecutter-MOAD-pypkg
 
 
 License
