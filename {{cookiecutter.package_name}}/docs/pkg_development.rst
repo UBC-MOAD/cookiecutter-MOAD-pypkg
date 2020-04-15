@@ -88,8 +88,7 @@ or
     $ hg clone https://your_userid@bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
 
 if you don't have `ssh key authentication`_ set up on Bitbucket
-(replace :kbd:`you_userid` with your Bitbucket userid,
-or copy the link from the :guilabel:`Clone` action pop-up on the `repository`_ page).
+(or copy the link from the :guilabel:`Clone or download` button on the `repository`_ page).
 
 .. _ssh key authentication: https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html
 
