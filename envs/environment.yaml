@@ -14,9 +14,9 @@ name: cookiecutter
 
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 
 dependencies:
   - cookiecutter
   - pip
-  - python=3.8
+  - python=3.9
