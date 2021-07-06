@@ -26,17 +26,17 @@
 .. image:: https://img.shields.io/badge/python-{{ cookiecutter.min_python_version }}+-blue.svg
     :target: https://docs.python.org/{{ cookiecutter.dev_python_version }}/
     :alt: Python Version
-.. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
-    :alt: Mercurial on Bitbucket
+.. image:: https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
+    :target: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}
+    :alt: Git on GitHub
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://black.readthedocs.io/en/stable/
     :alt: The uncompromising Python code formatter
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name.lower() }}/badge/?version=latest
     :target: https://{{ cookiecutter.package_name.lower() }}.readthedocs.io/en/latest/
     :alt: Documentation Status
-.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
+.. image:: https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
+    :target: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}/issues
     :alt: Issue Tracker
 
 The {{ cookiecutter.package_name }} package (:kbd:`{{ cookiecutter.package_slug }}`) is {{ cookiecutter.project_short_description }}
@@ -69,28 +69,29 @@ in particular:
 Getting the Code
 ================
 
-.. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
-    :alt: Mercurial on Bitbucket
+.. image:: https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
+    :target: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}
+    :alt: Git on GitHub
 
-Clone the code and documentation `repository`_ from Bitbucket with:
+Clone the code and documentation `repository`_ from GitHub with:
 
-.. _repository: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
-
-.. code-block:: bash
-
-    $ hg clone ssh://hg@bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
-
-or
+.. _repository: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}
 
 .. code-block:: bash
 
-    $ hg clone https://your_userid@bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }} {{ cookiecutter.package_name }}
+    $ git clone git@github.com:{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}.git
 
-if you don't have `ssh key authentication`_ set up on Bitbucket
-(or copy the link from the :guilabel:`Clone or download` button on the `repository`_ page).
+or copy the URI
+(the stuff after :kbd:`git clone` above)
+from the :guilabel:`Code` button on the `repository`_ page.
 
-.. _ssh key authentication: https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html
+.. note::
+
+    The :kbd:`git clone` command above assumes that your are `connecting to GitHub using SSH`_.
+    If it fails,
+    please follow the instructions in our :ref:`moaddocs:SecureRemoteAccess` docs to set up your SSH keys and :ref:`moaddocs:CopyYourPublicSshKeyToGitHub`.
+
+    .. _connecting to GitHub using SSH: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
 
 .. _{{ cookiecutter.package_name }}DevelopmentEnvironment:
@@ -184,8 +185,8 @@ The output looks something like::
 The HTML rendering of the docs ends up in :file:`docs/_build/html/`.
 You can open the :file:`index.html` file in that directory tree in your browser to preview the results of the build.
 
-If you have write access to the `repository`_ on Bitbucket,
-whenever you push changes to Bitbucket the documentation is automatically re-built and rendered at https://{{ cookiecutter.package_name.lower() }}.readthedocs.io/en/latest/.
+If you have write access to the `repository`_ on GitHub,
+whenever you push changes to GitHub the documentation is automatically re-built and rendered at https://{{ cookiecutter.package_name.lower() }}.readthedocs.io/en/latest/.
 
 
 .. _{{ cookiecutter.package_name }}LinkCheckingTheDocumentation:
@@ -262,13 +263,13 @@ to produce an HTML report that you can view in your browser by opening :file:`{{
 Version Control Repository
 ==========================
 
-.. image:: https://img.shields.io/badge/version%20control-hg-blue.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/
-    :alt: Mercurial on Bitbucket
+.. image:: https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
+    :target: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}
+    :alt: Git on GitHub
 
-The :kbd:`{{ cookiecutter.package_name }}` package code and documentation source files are available as a `Mercurial`_ repository at https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/.
+The :kbd:`{{ cookiecutter.package_name }}` package code and documentation source files are available as a `Git`_ repository at https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}.
 
-.. _Mercurial: https://www.mercurial-scm.org/
+.. _Git: https://git-scm.com/
 
 
 .. _{{ cookiecutter.package_name }}IssueTracker:
@@ -276,13 +277,13 @@ The :kbd:`{{ cookiecutter.package_name }}` package code and documentation source
 Issue Tracker
 =============
 
-.. image:: https://img.shields.io/bitbucket/issues/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}.svg
-    :target: https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues?status=new&status=open
+.. image:: https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
+    :target: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}/issues
     :alt: Issue Tracker
 
 Development tasks,
 bug reports,
-and enhancement ideas are recorded and managed in the issue tracker at https://bitbucket.org/{{ cookiecutter.bbitbucket_team }}/{{ cookiecutter.bitbucket_repo_name }}/issues.
+and enhancement ideas are recorded and managed in the issue tracker at https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}/issues.
 
 
 License

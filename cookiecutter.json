@@ -6,16 +6,15 @@
     "Salish Sea MEOPAR Project Contributors and The University of British Columbia",
     "MIDOSS project contributors, The University of British Columbia, and Dalhousie University"
   ],
-  "bitbucket_team": [
-    "UBC_MOAD",
-    "salishsea",
-    "midoss",
-    "canyonsubc",
-    "ccar-modeling"
+  "github_org": [
+    "UBC-MOAD",
+    "SalishSeaCast",
+    "MIDOSS",
+    "SS-Atlantis"
   ],
   "project_name": "Another MOAD Group Python Package",
   "package_name": "{{ cookiecutter.project_name.replace(' ', '-') }}",
-  "bitbucket_repo_name": "{{ cookiecutter.package_name.lower() }}",
+  "github_repo_name": "{{ cookiecutter.package_name.lower() }}",
   "package_slug": "{{ cookiecutter.package_name.lower().replace(' ', '_').replace('-', '_') }}",
   "conda_dev_env_name": "{{ cookiecutter.package_name.lower() }}",
   "project_short_description": "Short description of this Python package.",
