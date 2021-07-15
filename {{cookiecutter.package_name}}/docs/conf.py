@@ -24,7 +24,7 @@ setup_cfg = configparser.ConfigParser()
 setup_cfg.read(os.path.abspath("../setup.cfg"))
 project = setup_cfg["metadata"]["name"]
 
-author = "{{ cookiecutter.full_name }}"
+author = "{{ cookiecutter.package_author_name }}"
 
 
 import datetime
