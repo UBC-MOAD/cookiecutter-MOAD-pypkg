@@ -16,7 +16,7 @@ name: {{ cookiecutter.conda_dev_env_name }}
 
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 
 dependencies:
   - pip

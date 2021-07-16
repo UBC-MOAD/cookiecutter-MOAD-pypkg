@@ -1,9 +1,10 @@
 # conda environment description file for readthedocs build environment
 
-name: {{ cookiecutter.package_name.lower() }}-rtd
+name: {{ cookiecutter.conda_dev_env_name }}-rtd
 
 channels:
-  - defaults
+  - conda-forge
+  - nodefaults
 
 dependencies:
   - python={{ cookiecutter.dev_python_version }}

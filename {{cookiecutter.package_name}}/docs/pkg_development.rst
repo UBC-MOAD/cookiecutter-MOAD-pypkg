@@ -16,7 +16,7 @@
 .. _{{ cookiecutter.package_name }}PackagedDevelopment:
 
 **********************************************************
-:kbd:`{{ cookiecutter.package_slug }}` Package Development
+:kbd:`{{ cookiecutter.package_name }}` Package Development
 **********************************************************
 
 
@@ -32,10 +32,10 @@
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://black.readthedocs.io/en/stable/
     :alt: The uncompromising Python code formatter
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name.lower() }}/badge/?version=latest
-    :target: https://{{ cookiecutter.package_name.lower() }}.readthedocs.io/en/latest/
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.github_repo_name }}/badge/?version=latest
+    :target: https://{{ cookiecutter.github_repo_name.lower() }}.readthedocs.io/en/latest/
     :alt: Documentation Status
-.. image:: https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
+.. image:: https://img.shields.io/github/issues/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}?logo=github
     :target: https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo_name }}/issues
     :alt: Issue Tracker
 
@@ -51,17 +51,16 @@ Python Versions
     :target: https://docs.python.org/{{ cookiecutter.dev_python_version }}/
     :alt: Python Version
 
-The :kbd:`{{ cookiecutter.package_slug }}` package is developed and tested using `Python`_ {{ cookiecutter.dev_python_version }} or later.
-The package uses some Python language features that are not available in versions prior to 3.6,
+The :kbd:`{{ cookiecutter.package_slug }}` package is developed and tested using `Python`_ {{ cookiecutter.dev_python_version }}.
+The package uses some Python language features that are not available in versions prior to 3.8,
 in particular:
 
 * `formatted string literals`_
   (aka *f-strings*)
-* the `file system path protocol`_
+  with :kbd:`=` specifiers
 
 .. _Python: https://www.python.org/
 .. _formatted string literals: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
-.. _file system path protocol: https://docs.python.org/3/whatsnew/3.6.html#whatsnew36-pep519
 
 
 .. _{{ cookiecutter.package_name }}GettingTheCode:
@@ -100,13 +99,12 @@ Development Environment
 =======================
 
 Setting up an isolated development environment using `Conda`_ is recommended.
-Assuming that you have the `Anaconda Python Distribution`_ or `Miniconda3`_ installed,
-you can create and activate an environment called :kbd:`{{ cookiecutter.package_name.lower() }}` that will have all of the Python packages necessary for development,
+Assuming that you have `Miniconda3`_ installed,
+you can create and activate an environment called :kbd:`{{ cookiecutter.conda_dev_env_name }}` that will have all of the Python packages necessary for development,
 testing,
 and building the documentation with the commands below.
 
 .. _Conda: https://conda.io/en/latest/
-.. _Anaconda Python Distribution: https://www.anaconda.com/distribution/
 .. _Miniconda3: https://docs.conda.io/en/latest/miniconda.html
 
 .. code-block:: bash
@@ -150,9 +148,11 @@ To run :command:`black` on the entire code-base use:
     ({{ cookiecutter.conda_dev_env_name }})$ black ./
 
 in the repository root directory.
-The output looks something like::
+The output looks something like:
 
-  **add example black output**
+.. code-block:: text
+
+    **add example black output**
 
 
 .. _{{ cookiecutter.package_name }}BuildingTheDocumentation:
@@ -167,20 +167,22 @@ Building the Documentation
 The documentation for the :kbd:`{{ cookiecutter.package_name }}` package is written in `reStructuredText`_ and converted to HTML using `Sphinx`_.
 Creating a :ref:`{{ cookiecutter.package_name }}DevelopmentEnvironment` as described above includes the installation of Sphinx.
 Building the documentation is driven by the :file:`docs/Makefile`.
-With your :kbd:`salishsea-nowcast` development environment activated,
+With your :kbd:`{{ cookiecutter.conda_dev_env_name }}` development environment activated,
 use:
 
-.. _reStructuredText: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-.. _Sphinx: http://www.sphinx-doc.org/en/master/
+.. _reStructuredText: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+.. _Sphinx: https://www.sphinx-doc.org/en/master/
 
 .. code-block:: bash
 
     ({{ cookiecutter.conda_dev_env_name }})$ (cd docs && make clean html)
 
 to do a clean build of the documentation.
-The output looks something like::
+The output looks something like:
 
-  **add example Sphinx output**
+.. code-block:: text
+
+    **add example Sphinx output**
 
 The HTML rendering of the docs ends up in :file:`docs/_build/html/`.
 You can open the :file:`index.html` file in that directory tree in your browser to preview the results of the build.
@@ -195,17 +197,19 @@ Link Checking the Documentation
 -------------------------------
 
 Sphinx also provides a link checker utility which can be run to find broken or redirected links in the docs.
-With your :kbd:`{{ cookiecutter.package_name.lower() }})` environment activated,
+With your :kbd:`{{ cookiecutter.conda_dev_env_name }})` environment activated,
 use:
 
 .. code-block:: bash
 
-    ({{ cookiecutter.conda_dev_env_name }}))$ cd {{ cookiecutter.package_name }})/docs/
+    ({{ cookiecutter.conda_dev_env_name }}))$ cd {{ cookiecutter.package_name }}/docs/
     ({{ cookiecutter.conda_dev_env_name }})) docs$ make linkcheck
 
-The output looks something like::
+The output looks something like:
 
-  **add example linkcheck output**
+.. code-block:: text
+
+    **add example linkcheck output**
 
 Look for any errors in the above output or in _build/linkcheck/output.txt
 
@@ -220,27 +224,30 @@ The `pytest`_ tool is used for test parametrization and as the test runner for t
 
 .. _pytest: https://docs.pytest.org/en/latest/
 
-With your :kbd:`{{ cookiecutter.package_name.lower() }}` development environment activated,
+With your :kbd:`{{ cookiecutter.conda_dev_env_name }}` development environment activated,
 use:
 
 .. code-block:: bash
 
     ({{ cookiecutter.conda_dev_env_name }})$ cd {{ cookiecutter.package_name }}/
-    ({{ cookiecutter.conda_dev_env_name }})$ py.test
+    ({{ cookiecutter.conda_dev_env_name }})$ pytest
 
 to run the test suite.
-The output looks something like::
+The output looks something like:
 
-  **add example pytest output**
+.. code-block:: text
 
-You can monitor what lines of code the test suite exercises using the `coverage.py`_ tool with the command:
+    **add example pytest output**
+
+You can monitor what lines of code the test suite exercises using the `coverage.py`_ and `pytest-cov`_ tools with the command:
 
 .. _coverage.py: https://coverage.readthedocs.io/en/latest/
+.. _pytest-cov: https://pytest-cov.readthedocs.io/en/latest/
 
 .. code-block:: bash
 
     ({{ cookiecutter.conda_dev_env_name }})$ cd {{ cookiecutter.package_name }}/
-    ({{ cookiecutter.conda_dev_env_name }})$ coverage run -m py.test
+    ({{ cookiecutter.conda_dev_env_name }})$ pytest --cov=./
 
 and generate a test coverage report with:
 

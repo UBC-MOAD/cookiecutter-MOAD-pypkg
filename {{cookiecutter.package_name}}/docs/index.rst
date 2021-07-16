@@ -16,7 +16,7 @@
 {{ cookiecutter.package_name }} Documentation
 *********************************************
 
-This is the documentation for the :kbd:`{{ cookiecutter.package_slug }}` Python package.
+This is the documentation for the :kbd:`{{ cookiecutter.package_name }}` Python package.
 
 
 .. toctree::
