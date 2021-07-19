@@ -111,7 +111,7 @@ and building the documentation with the commands below.
 
     $ cd {{ cookiecutter.package_name }}
     $ conda env create -f env/environment-dev.yaml
-    $ source activate {{ cookiecutter.package_name.lower() }}
+    $ conda activate {{ cookiecutter.package_name.lower() }}
     ({{ cookiecutter.conda_dev_env_name }})$ pip install --editable .
 
 The :kbd:`--editable` option in the :command:`pip install` command above installs the package from the cloned repo via symlinks so that the installed package will be automatically updated as the repo evolves.
@@ -120,7 +120,7 @@ To deactivate the environment use:
 
 .. code-block:: bash
 
-    ({{ cookiecutter.conda_dev_env_name }})$ source deactivate
+    ({{ cookiecutter.conda_dev_env_name }})$ conda deactivate
 
 
 .. _{{ cookiecutter.package_name }}CodingStyle:
