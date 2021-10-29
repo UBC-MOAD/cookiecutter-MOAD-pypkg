@@ -22,8 +22,9 @@ dependencies:
   - pip
   - python={{ cookiecutter.dev_python_version }}
 
-  # For coding style
+  # For code style & repo QA
   - black
+  - pre-commit
 
   # For unit tests
   - coverage

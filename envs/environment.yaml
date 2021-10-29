@@ -20,3 +20,7 @@ dependencies:
   - cookiecutter
   - pip
   - python=3.9
+
+  # For code style & repo QA
+  - black
+  - pre-commit
