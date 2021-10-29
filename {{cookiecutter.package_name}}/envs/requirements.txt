@@ -2,4 +2,3 @@
 #
 # Create/update this file with:
 #   ({{ cookiecutter.conda_dev_env_name }})$ python3 -m pip list --format=freeze >> envs/requirements.txt
-
