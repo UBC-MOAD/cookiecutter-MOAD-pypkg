@@ -6,6 +6,7 @@
 out
 gen
 
+
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -131,6 +132,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+
 ### Linux template
 *~
 
@@ -145,6 +147,7 @@ dmypy.json
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+
 
 ### macOS template
 # General
@@ -173,6 +176,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
 
 ### Emacs template
 # -*- mode: gitignore; -*-
@@ -225,3 +229,13 @@ flycheck_*.el
 /network-security.data
 
 
+### VisualStudioCode template
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
