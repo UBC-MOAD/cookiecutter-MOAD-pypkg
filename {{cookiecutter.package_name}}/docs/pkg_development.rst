@@ -112,7 +112,7 @@ and building the documentation with the commands below.
     $ cd {{ cookiecutter.package_name }}
     $ conda env create -f env/environment-dev.yaml
     $ conda activate {{ cookiecutter.package_name.lower() }}
-    ({{ cookiecutter.conda_dev_env_name }})$ pip install --editable .
+    ({{ cookiecutter.conda_dev_env_name }})$ python3 -m pip install --editable .
 
 The :kbd:`--editable` option in the :command:`pip install` command above installs the package from the cloned repo via symlinks so that the installed package will be automatically updated as the repo evolves.
 
