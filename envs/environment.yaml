@@ -1,9 +1,9 @@
 # conda environment description file for the cookiecutter environment that is
-# required to create packages using the cookiecutter-moad-pypkg cookie cutter
+# required to create packages using the cookiecutter-MOAD-pypkg cookie cutter
 #
 # Create a conda environment in which to run cookiecutter with:
 #
-#   $ conda env create -f cookiecutter-moad-pypkg/envs/environment.yaml
+#   $ conda env create -f cookiecutter-MOAD-pypkg/envs/environment.yaml
 #   $ conda activate cookiecutter
 #
 # See the envs/requirements.txt file for an exhaustive list of all of the
@@ -19,7 +19,7 @@ channels:
 dependencies:
   - cookiecutter
   - pip
-  - python=3.9
+  - python=3.10
 
   # For code style & repo QA
   - black
