@@ -31,11 +31,7 @@ import datetime
 
 pkg_creation_year = {{ cookiecutter.project_creation_year }}
 copyright_years = (
-    "{pkg_creation_year}".format(pkg_creation_year=pkg_creation_year)
-    if datetime.date.today().year == pkg_creation_year
-    else "{pkg_creation_year}-{today:%Y}".format(
-        pkg_creation_year=pkg_creation_year, today=datetime.date.today()
-    )
+    "{pkg_creation_year} – present".format(pkg_creation_year=pkg_creation_year)
 )
 copyright = "{copyright_years}, {author}".format(
     copyright_years=copyright_years, author=author

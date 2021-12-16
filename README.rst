@@ -44,7 +44,7 @@ License
 
 .. SPDX-License-Identifier: Apache-2.0
 
-This Python package cookiecutter is copyright 2019-2021 by the UBC EOAS MOAD Group
+This Python package cookiecutter is copyright 2019 – present by the UBC EOAS MOAD Group
 and The University of British Columbia.
 
 It is licensed under the Apache License, Version 2.0.
