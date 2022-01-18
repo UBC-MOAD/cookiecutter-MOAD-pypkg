@@ -112,7 +112,7 @@ and building the documentation with the commands below.
 .. code-block:: bash
 
     $ cd {{ cookiecutter.package_name }}
-    $ conda env create -f env/environment-dev.yaml
+    $ conda env create -f envs/environment-dev.yaml
     $ conda activate {{ cookiecutter.package_name.lower() }}
     ({{ cookiecutter.conda_dev_env_name }})$ python3 -m pip install --editable .
 
