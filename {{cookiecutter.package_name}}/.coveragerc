@@ -1,8 +1,0 @@
-[run]
-branch = True
-source =
-    {{ cookiecutter.package_slug }}
-    tests
-
-[report]
-show_missing = True
