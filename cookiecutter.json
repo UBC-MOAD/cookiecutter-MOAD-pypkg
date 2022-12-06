@@ -21,6 +21,6 @@
   "project_short_description": "Short description of this Python package.",
   "project_creation_year": "{% now 'local', '%Y' %}",
   "version": "{% now 'local', '%y' %}.1.dev0",
-  "min_python_version": "3.10",
-  "dev_python_version": "3.10"
+  "min_python_version": "3.11",
+  "dev_python_version": "3.11"
 }
