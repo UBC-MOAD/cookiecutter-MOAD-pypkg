@@ -12,35 +12,20 @@
 
 import os
 import sys
+import importlib.metadata
 
 sys.path.insert(0, os.path.abspath(".."))
 
 
 # -- Project information -----------------------------------------------------
 
-import configparser
-
-setup_cfg = configparser.ConfigParser()
-setup_cfg.read(os.path.abspath("../setup.cfg"))
-project = setup_cfg["metadata"]["name"]
-
+project = "{{ cookiecutter.package_name }}"
 author = "{{ cookiecutter.package_author_name }}"
-
-
-import datetime
-
-pkg_creation_year = {{ cookiecutter.project_creation_year }}
-copyright_years = (
-    "{pkg_creation_year} – present".format(pkg_creation_year=pkg_creation_year)
-)
-copyright = "{copyright_years}, {author}".format(
-    copyright_years=copyright_years, author=author
-)
+pkg_creation_year = "{{ cookiecutter.project_creation_year }}"
+copyright = f"{pkg_creation_year} – present, {author}"
 
 # The full version, including alpha/beta/rc tags
-import {{ cookiecutter.package_slug }}
-
-release = {{ cookiecutter.package_slug }}.__version__
+release = importlib.metadata.version(project)
 
 
 # -- General configuration ---------------------------------------------------
