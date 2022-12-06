@@ -8,9 +8,8 @@
 #   $ conda activate {{ cookiecutter.conda_dev_env_name }}
 #   ({{ cookiecutter.conda_dev_env_name }})$ python3 -m pip install --editable {{ cookiecutter.package_name }}
 #
-# See the envs/requirements.txt file for an exhaustive list of all of the
-# packages installed in the environment and their versions used in
-# recent development.
+# See the envs/requirements.txt file for an exhaustive list of all the
+# packages installed in the environment and their versions used in recent development.
 
 name: {{ cookiecutter.conda_dev_env_name }}
 
@@ -22,8 +21,9 @@ dependencies:
   - pip
   - python={{ cookiecutter.dev_python_version }}
 
-  # For code style & repo QA
+  # For coding style, repo QA, and pkg management
   - black
+  - hatch
   - pre-commit
 
   # For unit tests
