@@ -6,7 +6,6 @@
 #
 #   $ conda env create -f {{ cookiecutter.package_name }}/envs/environment-dev.yaml
 #   $ conda activate {{ cookiecutter.conda_dev_env_name }}
-#   ({{ cookiecutter.conda_dev_env_name }})$ python3 -m pip install --editable {{ cookiecutter.package_name }}
 #
 # See the envs/requirements.txt file for an exhaustive list of all the
 # packages installed in the environment and their versions used in recent development.
@@ -38,3 +37,6 @@ dependencies:
   - pip:
     # For unit tests
     - pytest-randomly
+
+    # editable install of NEMO-Cmd package
+    - --editable ../
