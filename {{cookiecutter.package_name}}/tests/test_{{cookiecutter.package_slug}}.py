@@ -15,5 +15,4 @@
 # SPDX-License-Identifier: Apache-2.0
 
 
-"""Unit tests for {{ cookiecutter.package_slug }}
-"""
+"""Unit tests for {{ cookiecutter.package_slug }}"""
