@@ -33,7 +33,10 @@ release = importlib.metadata.version(project)
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx.ext.intersphinx"]
+extensions = [
+    "notfound.extension",
+    "sphinx.ext.intersphinx",
+]
 
 intersphinx_mapping = {
     "moaddocs": ("https://ubc-moad-docs.readthedocs.io/en/latest/", None),
