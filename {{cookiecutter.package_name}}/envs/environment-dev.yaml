@@ -31,12 +31,13 @@ dependencies:
   - tomli
 
   # For documentation
-  - sphinx
-  - sphinx_rtd_theme
+  - sphinx=8.1.3
+  - sphinx-notfound-page=1.0.4
+  - sphinx-rtd-theme=3.0.0
 
   - pip:
     # For unit tests
     - pytest-randomly
 
-    # editable install of NEMO-Cmd package
+    # Install the {{ cookiecutter.package_name }} package in editable mode
     - --editable ../
